@@ -1,0 +1,105 @@
+.container__create {
+	display: flex;
+	flex-direction: row;
+	padding: 1.5rem;
+	--base-font-size: 11px;
+	--font-weight-light: 300;
+	--font-weight-bold: 400;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+	font-size: var(--base-font-size);
+	font-weight: var(--font-weight-light);
+	color: #8ecae6;
+}
+h2 {
+	font-size: 20px;
+}
+h4 {
+	font-size: 13px;
+}
+.create {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	padding: 2rem;
+	font-size: var(--base-font-size);
+	font-weight: var(--font-weight-light);
+	border-radius: 11px;
+	background-color: #023047;
+	box-shadow: 0 10px 30px 5px var(--box-shadow-color);
+}
+
+.custom-file-input::file-selector-button {
+	background-color: #219ebc;
+	border: white;
+	color: aliceblue;
+	font-size: 10px;
+	padding: 0.15rem 0rem;
+	font-family: inherit;
+	cursor: pointer;
+}
+
+.form__content {
+	display: flex;
+	flex-direction: column;
+	max-height: 260px;
+	flex-wrap: wrap;
+	align-content: flex-start;
+	gap: 0.8rem;
+}
+
+fieldset {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: flex-start;
+	border-radius: 8px;
+	gap: 0.2rem;
+	padding: 1rem;
+}
+.input__radio label {
+	display: flex;
+	flex-direction: column;
+	padding: 1rem;
+}
+.input__checkbox {
+	display: flex;
+	flex-direction: row-reverse;
+}
+.input__checkbox label {
+	padding-right: 0.5rem;
+}
+.select__label {
+	text-align: right;
+	margin-bottom: 0;
+}
+
+.fieldset__option {
+	display: flex;
+	gap: 0.8rem;
+}
+.btn__submit {
+	margin-top: 1.25rem;
+	border: 2px solid #ffa43d;
+	background: #fb8500;
+}
+
+.error-message {
+	font-size: 10px;
+	color: #e34c00;
+	font-weight: 400;
+}
+
+@media screen and (max-width: 640px) {
+	.form__content {
+		flex-direction: row;
+		align-content: space-around;
+	}
+	.btn__submit {
+		margin-top: 1.5rem;
+	}
+}

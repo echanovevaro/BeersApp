@@ -5,7 +5,7 @@ export const useApi = () => {
 	const [loading, setLoading] = useState(true)
 	const [currentPage, setCurrentPage] = useState(1)
 	const [error, setError] = useState(null)
-	let urlPag = `https://api.punkapi.com/v2/beers?page=${currentPage}&per_page=12`
+	let urlPag = `https://api.punkapi.com/v2/beers?page=${currentPage}&per_page=18`
 
 	useEffect(() => {
 		const fetchData = () => {
